@@ -2,27 +2,27 @@
 
 ### RU 
 
-#### ⚠️ **Для работы программы требуется [NodeJs](https://nodejs.org/en/download "скачать NodeJs")**.
+#### ⚠️ **Для работы программы требуется [NodeJs](https://nodejs.org/en/download "скачать NodeJs")**
 
 #### **Краткая инструкция:**
-1. После того как вы скачали NodeJS, поместите не переведённый файл в папку _input.
+1. После того как вы скачали NodeJS, поместите не переведённый файл в папку _input
 
-2. Затем запустите файл start.bat.
+2. Затем запустите файл start.bat
 
-**Более подробная инструкция доступна в папке "manual инструкция".**
+**Более подробная инструкция доступна в папке "manual инструкция"**
 
 <hr>
 
 ### EN
 
-#### ⚠️ **The program requires [NodeJs](https://nodejs.org/en/download "download NodeJs") to work**.
+#### ⚠️ **The program requires [NodeJs](https://nodejs.org/en/download "download NodeJs") to work**
 
 #### **Brief instructions:**
-1. After downloading NodeJS, place the untranslated file in the _input folder.
+1. After downloading NodeJS, place the untranslated file in the _input folder
 
-2. Then run the start.bat file.
+2. Then run the start.bat file
 
-**More detailed instructions are available in the "manual instructions" folder.**
+**More detailed instructions are available in the "manual инструкция" folder**
 
 <hr>
 

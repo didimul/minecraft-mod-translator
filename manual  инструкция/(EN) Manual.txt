@@ -1,20 +1,39 @@
-1 instruction:
- If you need a translation from English to Russian:
- - Drop the en_us.json file into the input folder
- - Open the start.bat file
- - Wait for the translation to complete (translation via Google Translate)
- - Open the output folder
- - Take the ru_ru.json file
- - Open the mod folder (.jar)
- - Go to assets => "mod name" => lang
- - Drop the ru_ru.json file into the lang folder
+Instruction 1:
+    If you need a translation from English to Russian:
+        - Upload the en_us.json file (open the mod's .jar file, I usually open it with 7z, then go to assets =) to the input folder.
+            • Where to get en_us.json:
+            1: Open the mod's .jar file (I usually open it with 7z)
+            2: Go to assets => "mod name" => lang
+            3: Get en_us.json
+        - Open the start.bat file
+        - Wait for the translation to complete (translate via Google Translate)
+        - Open the output folder
+        - Get the ru_ru.json file
+        - Open the mod's .jar file
+        - Go to assets => "mod name" => lang
+        - Upload the ru_ru.json file to the lang folder.
 
-2 instructions:
- If you need a translation from another language to another:
- - Open the language.json file
- - Where it says "input": "Translation from which language" (in a short form, for example, english = en or russian = ru)
- - And where it says "to": "translation to the desired language" (also in a short form and always in double quotes)
- - Rename the file to the language to which the translation was made, for example, if from English to German, then file.json -> de_de.json
- - And then follow the 1st instruction
+Instruction 2:
+    If you need a translation from another language to another:
+        - Open the language.json file
+        - Where it says "fromLang":
+            1: Remove "en"
+            2: Write "language to translate from" in double quotation marks
+            !!! In short (ISO 639) format, for example, english = en or russian = ru
 
-The abbreviated language format for file.json can be viewed here https://minecraft.fandom.com/wiki/Language (possibly also for "input", I haven't checked)
+        - Where "toLang" is written:
+            1: Remove "ru"
+            2: Write "language to translate into" in double quotation marks
+            !!! Also in short (ISO 639) format and must be in double quotes.
+
+        - Where it says "inputFile":
+            1: Remove "en_us.json"
+            2: Write the language in short format, but slightly differently (example: ru (Russian) => ru_ru.json or de (Deutsch) => de_de.json)
+
+        - Where it says "outputFile":
+            1: Remove "ru_ru.json"
+            2: Write the language in short format, but slightly differently (example: en (English (US)) => en_us.json or de (Deutsch) => de_de.json)
+
+        - Then follow instruction 1.
+
+        !!! The shortened language format for "inputFile" and "outputFile" can be found here: https://minecraft.fandom.com/wiki/Language (possibly for "fromLang" and "toLang" as well, I I haven't checked)
