@@ -1,0 +1,20 @@
+{
+  "name": "minecraft-mods-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "translate.js",
+  "scripts": {
+    "start": "node translate.js"
+  },
+  "keywords": [
+    "translator",
+    "translate",
+    "minecraft"
+  ],
+  "author": "ds apps",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "google-translate-api-x": "^10.7.2"
+  }
+}

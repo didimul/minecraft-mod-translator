@@ -1,0 +1,7 @@
+{
+    "inputFile": "en_us.json",
+    "outputFile": "ru_ru.json",
+
+    "fromLang": "en",
+    "toLang": "ru"
+}
