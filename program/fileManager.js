@@ -5,7 +5,7 @@ module.exports = class FileManager {
     // читает файл language и задает перевод
     async readInitFile() {
         try {
-            const fileBuffer = await fs.readFile(path.relative('', '../language/language.json'));
+            const fileBuffer = await fs.readFile(path.relative('', './language/language.json'));
             const initJSON = JSON.parse(fileBuffer);
             return initJSON;
         } catch(err) {
@@ -24,7 +24,7 @@ module.exports = class FileManager {
         try {
             const INIT = await this.readInitFile();
 
-            const fileBuffer = await fs.readFile(path.resolve('', `../_input/${INIT.inputFile}`));
+            const fileBuffer = await fs.readFile(path.resolve('', `./_input/${INIT.inputFile}`));
             const modJSON = JSON.parse(fileBuffer);
             return modJSON
         } catch(err) {
@@ -37,7 +37,7 @@ module.exports = class FileManager {
         try {
             const INIT = await this.readInitFile();
 
-            await fs.writeFile(path.resolve('', `../_output/${INIT.outputFile}`), JSON.stringify(data, null, 2));
+            await fs.writeFile(path.resolve('', `./_output/${INIT.outputFile}`), JSON.stringify(data, null, 2));
             console.log(this.#out);
         } catch(err) {
             console.log('SAVE FILE ERR:', err);
