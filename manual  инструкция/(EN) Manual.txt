@@ -37,5 +37,5 @@
 
         - Follow 1 instruction further
 
-The abbreviated language format for "inputFile" and "outputFile" can be viewed here https://minecraft .fandom.com/wiki/Language
-The ISO 639 format can be viewed here https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes ?ysclid=mjsytrw32v400119374
+The abbreviated language format for "inputFile" and "outputFile" can be viewed here https://minecraft.fandom.com/wiki/Language
+The ISO 639 format can be viewed here https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes?ysclid=mjsytrw32v400119374
