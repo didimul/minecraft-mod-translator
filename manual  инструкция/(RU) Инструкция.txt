@@ -1,39 +1,41 @@
 1 инструкция:
     Если нужен перевод с анлийского на русский:
-        - Закинуть файл en_us.json (открыть .jar файл мода, я обычно открываю через 7z, зайти в assets =) в папку input
+        - Закинуть файл en_us.json в папку _input
             • Откуда взять en_us.json:
                 1: Открыть .jar файл мода (я обычно открываю через 7z)
                 2: Зайти в assets => "название мода" => lang
                 3: Взять en_us.json
-        - Открыть файл start.bat
+        - Запустить файл start.bat
         - Дождаться завершения перевода (перевод через Google Translate)
-        - Открыть папку output
+        - Открыть папку _output
         - Забрать файл ru_ru.json
         - Открыть файл мода (.jar файл)
         - Зайти в assets => "название мода"  => lang
         - Закинуть файл ru_ru.json в папку lang
 
 2 инструкция:
-    Если нужен перевод с другого языка на другой:
-        - Открыть файл language.json
-        - Где написано "fromLang":
+    Если нужен перевод с одного языка на другой:
+        - Открыть папку language и открыть файл language.json
+        
+        • Где написано "inputFile":
+            1: Убрать "en_us.json"
+            2: Написать язык в кратком формате в двойных кавычках (пример: ru (Russian) => ru_ru.json или de (Deutsch) => de_de.json)
+
+        • Где написано "outputFile":
+            1: Убрать "ru_ru.json"
+            2: Написать язык в кратком формате в двойных кавычках (пример: en (English (US)) => en_us.json или de (Deutsch) => de_de.json)
+        
+        • Где написано "fromLang":
             1: Убрать "en"
             2: Написать в двойных кавычках "язык с которого делается перевод" 
-            !!! В кратком (ISO 639) формате, например, english = en или russian = ru
+            !!! В формате ISO 639, например, english = en или russian = ru
 
-        -  Где написано "toLang":
+        •  Где написано "toLang":
             1: Убрать "ru"
             2: Написать в двойных кавычках "язык на которого надо сделать перевод"
-            !!! Тоже в кратком (ISO 639) формате и обязательно в двойных кавычках
-
-        - Где написано "inputFile":
-            1: Убрать "en_us.json"
-            2: Написать язык в кратком формате, но чуть по другому (пример: ru (Russian) => ru_ru.json или de (Deutsch) => de_de.json)
-
-        - Где написано "outputFile":
-            1: Убрать "ru_ru.json"
-            2: Написать язык в кратком формате, но чуть по другому (пример: en (English (US)) => en_us.json или de (Deutsch) => de_de.json)
+            !!! В формате ISO 639, например, deutsch = de или portuguese = pt
 
         - Дальше следовать по 1 инструкции
 
-Сокращенный формат языка для "inputFile" и "outputFile" можно посмотреть тут https://minecraft.fandom.com/wiki/Language (возможно и для "fromLang" и "toLang", я не проверял)
+Сокращенный формат языка для "inputFile" и "outputFile" можно посмотреть тут https://minecraft.fandom.com/wiki/Language
+ISO 639 формат можно посмотреть тут https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes?ysclid=mjsytrw32v400119374
